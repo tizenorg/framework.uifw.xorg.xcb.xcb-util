@@ -1,0 +1,181 @@
+xcb-util (0.3.6-8slp2) unstable; urgency=low
+
+  * [X11R7.6] upgrade package 
+  * Git: 165.213.180.234:slp/pkgs/xorg/xcb/xcb-util
+  * Tag: xcb-util_0.3.6-8slp2
+
+ -- SooChan Lim <sc1.lim@samsung.com>  Thu, 06 Jan 2011 14:09:53 +0900
+
+xcb-util (0.3.6-7slp2) unstable; urgency=low
+
+  * Add --as-needed option (omitted from previous commit)
+  * Git: 165.213.180.234:/git/slp/pkgs/xorg/xcb/xcb-util
+  * Tag: xcb-util_0.3.6-7slp2
+
+ -- Sung-Jin Park <sj76.park@samsung.com>  Mon, 22 Nov 2010 19:21:57 +0900
+
+xcb-util (0.3.6-6slp2) unstable; urgency=low
+
+  * Add following debug packages
+   - libxcb-atom1-dbg
+   - libxcb-aux0-dbg
+   - libxcb-event1-dbg
+   - libxcb-image0-dbg
+   - libxcb-keysyms1-dbg
+   - libxcb-property1-dbg
+   - libxcb-render-util0-dbg
+   - libxcb-reply1-dbg
+   - libxcb-icccm1-dbg
+  * Git: 165.213.180.234:/git/slp/pkgs/xorg/xcb/xcb-util
+  * Tag: xcb-util_0.3.6-6slp2
+
+ -- Sung-Jin Park <sj76.park@samsung.com>  Mon, 22 Nov 2010 18:12:59 +0900
+
+xcb-util (0.3.6-5slp2) unstable; urgency=low
+
+  * add --as-needed
+  * Git: 165.213.180.234:/git/slp/pkgs/xorg/xcb/xcb-util
+  * Tag: xcb-util_0.3.6-5slp2
+
+ -- SoocChan Lim <sc1.lim@samsung.com>  Thu, 18 Nov 2010 14:51:16 +0900
+
+xcb-util (0.3.6-4slp2) unstable; urgency=low
+
+  * Relax build dependency on gperf-dev to gperf | gperf-dev
+    (gperf is actually the proper package name).
+
+ -- Rafal Krypa <r.krypa@samsung.com>  Tue, 07 Sep 2010 21:28:13 +0900
+
+xcb-util (0.3.6-3slp2) unstable; urgency=low
+
+  * Update maintainer
+  * Git: 165.213.180.234:/git/slp2.0/slp2.0-pkgs/X11
+  * Tag: xcb-util_0.3.6-3slp2
+
+ -- Sung-Jin Park <sj76.park@samsung.com>  Wed, 21 Apr 2010 11:46:40 +0900
+
+xcb-util (0.3.6-2slp2) unstable; urgency=low
+
+  * Change revision
+
+ -- Sung-Jin Park <sj76.park@samsung.com>  Thu, 25 Mar 2010 19:00:15 +0900
+
+xcb-util (0.3.6-1build1) lucid; urgency=low
+
+  * rebuild rest of main for armel armv7/thumb2 optimization;
+    UbuntuSpec:mobile-lucid-arm-gcc-v7-thumb2
+
+ -- Alexander Sack <asac@ubuntu.com>  Sun, 07 Mar 2010 01:11:50 +0100
+
+xcb-util (0.3.6-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump standard version
+
+ -- Julien Danjou <acid@debian.org>  Mon, 24 Aug 2009 10:55:14 +0200
+
+xcb-util (0.3.5-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Julien Danjou <acid@debian.org>  Fri, 29 May 2009 11:51:03 +0200
+
+xcb-util (0.3.4-1) unstable; urgency=low
+
+  * New upstream release
+    + Bump version of keysyms
+    + Remove wm library
+  * Bump standard version
+
+ -- Julien Danjou <acid@debian.org>  Wed, 15 Apr 2009 16:04:31 +0200
+
+xcb-util (0.3.3-2) unstable; urgency=low
+
+  * Add versioned link to GPL.
+
+ -- Julien Danjou <acid@debian.org>  Sun, 15 Feb 2009 12:58:13 +0100
+
+xcb-util (0.3.3-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Julien Danjou <acid@debian.org>  Sat, 31 Jan 2009 15:56:59 +0100
+
+xcb-util (0.3.2-1) experimental; urgency=low
+
+  * New upstream release
+  * Add ${misc:Depends} on -dev packages
+
+ -- Julien Danjou <acid@debian.org>  Tue, 16 Dec 2008 14:47:17 +0100
+
+xcb-util (0.3.1-2) experimental; urgency=low
+
+  * Add sh in front of autogen.sh (Closes: #506393)
+
+ -- Julien Danjou <acid@debian.org>  Fri, 21 Nov 2008 10:17:40 +0100
+
+xcb-util (0.3.1-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Julien Danjou <acid@debian.org>  Thu, 20 Nov 2008 16:15:51 +0100
+
+xcb-util (0.3.0-2) experimental; urgency=low
+
+  * Add x11proto-core-dev versioned to build-dep (Closes: #505336)
+
+ -- Julien Danjou <acid@debian.org>  Tue, 11 Nov 2008 21:09:06 +0100
+
+xcb-util (0.3.0-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Julien Danjou <acid@debian.org>  Wed, 17 Sep 2008 15:04:55 +0200
+
+xcb-util (0.2.1+git1-1) unstable; urgency=low
+
+  * New git snapshot
+  * dh_makeshlibs get a -V
+
+ -- Julien Danjou <acid@debian.org>  Wed, 06 Aug 2008 17:44:13 +0200
+
+xcb-util (0.2+git41-1) unstable; urgency=low
+
+  * New git snapshot
+  * Fix sections, set libs for libs packages and libdevel for
+    -dev packages (Closes: #491534)
+
+ -- Julien Danjou <acid@debian.org>  Tue, 22 Jul 2008 10:02:18 +0200
+
+xcb-util (0.2+git36-1) unstable; urgency=low
+
+  [ Arnaud Fontaine ]
+  * debian/control:
+    + Add missing dependencies to libxcb*-dev packages. Closes: #480524.
+  * patches:
+    + Add icccm_remove_useless_functions patch which removes useless
+      function for accessing 'flags' which were also buggy because they
+      were returning a 'uint8_t' whereas 'flags' is a 'uint32_t'.
+    + Add icccm_fix_incorrect_copy which correctly copies the
+      reply value according to its format.
+    + Add icccm_fix_incorrect_pointer_usage which fixes
+      incorrect pointer usage.
+  * debian/copyright:
+    + Update copyright years.
+
+  [ Julien Danjou ]
+  * Switch to git based packaging
+  * Tweak get-orig-source
+  * Add autoconf as build dependency
+  * debian/control
+   + Bump standard version
+   + Add Vcs-* field
+
+ -- Julien Danjou <acid@debian.org>  Thu, 12 Jun 2008 10:20:10 +0200
+
+xcb-util (0.2-1) experimental; urgency=low
+
+  * Initial release (Closes: #437681)
+
+ -- Julien Danjou <acid@debian.org>  Tue, 25 Mar 2008 19:14:42 +0100
+
