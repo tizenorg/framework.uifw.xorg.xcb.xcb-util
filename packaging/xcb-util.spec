@@ -6,6 +6,7 @@ Group:      System/Libraries
 License:    MIT
 URL:        http://xcb.freedesktop.org/
 Source0:    http://xcb.freedesktop.org/dist/%{name}-%{version}.tar.gz
+Source1001: packaging/xcb-util.manifest 
 
 BuildRequires: pkgconfig(xcb-render)
 BuildRequires: pkgconfig(xcb-shm)
@@ -312,6 +313,7 @@ the X protocol but which have traditionally been provided by Xlib.
 
 
 %build
+cp %{SOURCE1001} .
 
 %reconfigure --disable-static
 
@@ -327,76 +329,94 @@ rm -rf %{buildroot}
 
 
 %files -n libxcb-atom
+%manifest xcb-util.manifest
 /usr/lib/libxcb-atom.so.*
 
 %files -n libxcb-atom-devel
+%manifest xcb-util.manifest
 /usr/include/xcb/xcb_atom.h
 /usr/lib/libxcb-atom.so
 /usr/lib/pkgconfig/xcb-atom.pc
 
 
 %files -n libxcb-aux
+%manifest xcb-util.manifest
 /usr/lib/libxcb-aux.so.*
 
 %files -n libxcb-aux-devel
+%manifest xcb-util.manifest
 /usr/include/xcb/xcb_aux.h
 /usr/lib/libxcb-aux.so
 /usr/lib/pkgconfig/xcb-aux.pc
 
 
 %files -n libxcb-event
+%manifest xcb-util.manifest
 /usr/lib/libxcb-event.so.*
 
 %files -n libxcb-event-devel
+%manifest xcb-util.manifest
 /usr/include/xcb/xcb_event.h
 /usr/lib/libxcb-event.so
 /usr/lib/pkgconfig/xcb-event.pc
 
 
 %files -n libxcb-icccm
+%manifest xcb-util.manifest
 /usr/lib/libxcb-icccm.so.*
 
 %files -n libxcb-icccm-devel
+%manifest xcb-util.manifest
 /usr/include/xcb/xcb_icccm.h
 /usr/lib/libxcb-icccm.so
 /usr/lib/pkgconfig/xcb-icccm.pc
 
 %files -n libxcb-image
+%manifest xcb-util.manifest
 /usr/lib/libxcb-image.so.*
 
 %files -n libxcb-image-devel
+%manifest xcb-util.manifest
 /usr/include/xcb/xcb_image.h
 /usr/lib/libxcb-image.so
 /usr/lib/pkgconfig/xcb-image.pc
 
 %files -n libxcb-keysyms
+%manifest xcb-util.manifest
 /usr/lib/libxcb-keysyms.so.*
 
 %files -n libxcb-keysyms-devel
+%manifest xcb-util.manifest
 /usr/include/xcb/xcb_keysyms.h
 /usr/lib/libxcb-keysyms.so
 /usr/lib/pkgconfig/xcb-keysyms.pc
 
 %files -n libxcb-property
+%manifest xcb-util.manifest
 /usr/lib/libxcb-property.so.*
 
 %files -n libxcb-property-devel
+%manifest xcb-util.manifest
 /usr/include/xcb/xcb_property.h
 /usr/lib/libxcb-property.so
 /usr/lib/pkgconfig/xcb-property.pc
 
 %files -n libxcb-render-util
+%manifest xcb-util.manifest
 /usr/lib/libxcb-render-util.so.*
 
 %files -n libxcb-render-util-devel
+%manifest xcb-util.manifest
 /usr/include/xcb/xcb_renderutil.h
 /usr/lib/libxcb-render-util.so
 /usr/lib/pkgconfig/xcb-renderutil.pc
 
 %files -n libxcb-reply
+%manifest xcb-util.manifest
 /usr/lib/libxcb-reply.so.*
 
 %files -n libxcb-reply-devel
+%manifest xcb-util.manifest
 /usr/include/xcb/xcb_reply.h
 /usr/lib/libxcb-reply.so
 /usr/lib/pkgconfig/xcb-reply.pc
