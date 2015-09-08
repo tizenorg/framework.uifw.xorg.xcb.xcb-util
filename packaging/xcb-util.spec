@@ -1,7 +1,7 @@
 Name:    xcb-util
 Summary: utility libraries for X C Binding
 Version: 0.3.8
-Release: slp.1.2
+Release: slp.1.3
 Group:   System/Libraries
 License: MIT
 URL:     http://xcb.freedesktop.org/
