@@ -1,7 +1,7 @@
 Name:    xcb-util
 Summary: utility libraries for X C Binding
-Version: 0.3.8
-Release: slp.1.3
+Version: 0.3.9.1
+Release: 1
 Group:   System/Libraries
 License: MIT
 URL:     http://xcb.freedesktop.org/
@@ -42,6 +42,8 @@ make %{?jobs:-j%jobs}
 
 %install
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/license
+cp -af COPYING %{buildroot}/usr/share/license/%{name}
 %make_install
 
 %post -p /sbin/ldconfig
@@ -55,7 +57,8 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%{_libdir}/libxcb-util.so.0*
+%{_libdir}/libxcb-util.so.1*
+/usr/share/license/%{name}
 
 %files devel
 %defattr(-,root,root,-)

@@ -1,3 +1,9 @@
+Release 0.3.9 (2012-05-30)
+==========================
+
+- Remove xcb_bitops.h.
+- Do not rely anymore on gperf and m4 following removal of deprecated atoms.
+
 Release 0.3.8 (2010-04-25)
 ==========================
 

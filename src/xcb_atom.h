@@ -7,9 +7,6 @@
 extern "C" {
 #endif
 
-xcb_atom_t xcb_atom_get_predefined(uint16_t name_len, const char *name);
-const char *xcb_atom_get_name_predefined(xcb_atom_t atom);
-
 char *xcb_atom_name_by_screen(const char *base, uint8_t screen);
 char *xcb_atom_name_by_resource(const char *base, uint32_t resource);
 char *xcb_atom_name_unique(const char *base, uint32_t id);

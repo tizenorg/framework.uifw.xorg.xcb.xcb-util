@@ -1,4 +1,3 @@
-
 ACLOCAL_AMFLAGS = -I m4
 
 SUBDIRS = src
@@ -7,8 +6,7 @@ pkgconfig_DATA =	\
 	xcb-atom.pc	\
 	xcb-aux.pc	\
 	xcb-event.pc	\
-	xcb-util.pc \
-	xcb-renderutil.pc
+	xcb-util.pc
 
 MAINTAINERCLEANFILES = ChangeLog INSTALL
 
@@ -21,3 +19,5 @@ ChangeLog:
 	$(CHANGELOG_CMD)
 
 dist-hook: ChangeLog INSTALL
+
+EXTRA_DIST = autogen.sh
